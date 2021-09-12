@@ -1,3 +1,5 @@
+@import "./media-queries.css";
+
 :root {
 	--color-primary: #000000;
 	--color-secundary: #ffe919;
@@ -112,6 +114,7 @@ p {
 .menu-icons,
 .menu-bar,
 .menu-time {
+	cursor: pointer;
 	font-size: 1.3em;
 }
 
@@ -124,12 +127,19 @@ p {
 	display: none;
 }
 
+/* GRID-FLUID */
+.grid-fluid {
+	display: grid;
+	max-width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 /* COMPONENTS MAIN */
 .movie {
 	display: grid;
 	margin: 1em;
 	padding: 1em;
-	border: solid 5px var(--color-primary);
+	border: solid 1px var(--color-primary);
 	border-radius: 5px;
 }
 .movie h1 {
@@ -141,5 +151,29 @@ p {
 }
 .movie-descripcion {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
+}
+
+/* COMPONENT LOADER */
+.loader {
+	display: block;
+	margin: 1em auto;
+	width: 4em;
+	height: 4em;
+}
+
+/* COMPONENT PEOPLE */
+.people {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1em;
+	padding: 1em;
+	border: solid 1px var(--color-primary);
+}
+
+.people a {
+	text-decoration: none;
+	text-align: end;
 }

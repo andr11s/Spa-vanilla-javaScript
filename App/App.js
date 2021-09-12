@@ -1,8 +1,7 @@
 import { Header } from "./components/header.js";
+import { Loader } from "./components/loader.js";
 import { Main } from "./components/main.js";
-import { MoviesCard } from "./components/movies.js";
-import { Api } from "./helpers/api.js";
-import ApiConfig from "./helpers/api-config.js";
+import { Router } from "./components/router.js";
 
 export function App() {
 	const d = document;
@@ -10,13 +9,7 @@ export function App() {
 
 	$root.appendChild(Header());
 	$root.appendChild(Main());
+	$root.appendChild(Loader());
 
-	Api({
-		url: ApiConfig.FILMS,
-		cbSucess: (movies) => {
-			let htmlMovie = "";
-			movies.forEach((element) => (htmlMovie += MoviesCard(element)));
-			d.getElementById("main").innerHTML = htmlMovie;
-		},
-	});
+	Router();
 }

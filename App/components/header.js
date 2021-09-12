@@ -14,9 +14,9 @@ export function Header() {
 		</div>
 		<nav class="nav none">
 			<ul class="menu">
-				<li class="menu-item"><a class="is-active" href="#">Peliculas</a></li>
-				<li class="menu-item"><a href="#">Personajes</a></li>
-				<li class="menu-item"><a href="#">Naves</a></li>
+				<li class="menu-item"><a class="is-active" href="#/">Peliculas</a></li>
+				<li class="menu-item"><a href="#/people">Personajes</a></li>
+				<li class="menu-item"><a href="#/starships">Naves</a></li>
 			</ul>
 		</nav>
 	`;

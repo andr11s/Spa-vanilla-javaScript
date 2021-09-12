@@ -1,3 +1,6 @@
 import { App } from "./App.js";
+import { Router } from "./components/router.js";
 
-document.addEventListener("DOMContentLoaded", App);
+const d = document;
+d.addEventListener("DOMContentLoaded", App);
+window.addEventListener("hashchange", Router);
