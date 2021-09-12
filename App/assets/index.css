@@ -1,0 +1,122 @@
+:root {
+	--color-primary: #000000;
+	--color-secundary: #ffe919;
+	--font-seze: 16px;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	scroll-behavior: smooth;
+	font-size: var(--font-seze);
+}
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+a {
+	color: blue;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: rgb(92, 92, 161);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2rem;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+h3 {
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+h5 {
+	margin: 0;
+	font-size: 0.85rem;
+}
+
+h6 {
+	margin: 0;
+	font-size: 0.7rem;
+}
+
+p {
+	line-height: 1.6;
+}
+
+/* COMPONENT MENU */
+
+.logo h2 {
+	font-size: 1.3rem;
+}
+.header-container {
+	display: flex;
+	padding: 1.5rem 1em;
+	top: 0;
+	justify-content: space-between;
+	position: sticky;
+	background-color: var(--color-primary);
+	color: var(--color-secundary);
+	align-items: center;
+}
+
+.nav {
+	background-color: var(--color-primary);
+}
+
+.menu {
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+.menu-item {
+	margin: 5px;
+}
+.menu a {
+	text-decoration: none;
+	margin: 1rem;
+	font-size: 1.4rem;
+	color: var(--color-secundary);
+}
+
+.menu-icons,
+.menu-bar,
+.menu-time {
+	font-size: 1.3em;
+}
+
+.is-active {
+	width: 100%;
+	text-align: center;
+	border-bottom: solid 5px var(--color-secundary);
+}
+.none {
+	display: none;
+}

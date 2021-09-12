@@ -1,5 +1,5 @@
 const NAME = "swapi.dev",
-	DOMAIN = `${NAME}/api`,
+	DOMAIN = `https://${NAME}/api`,
 	FILMS = `${DOMAIN}/films/`,
 	PEOPLE = `${DOMAIN}/people/`,
 	PLANETS = `${DOMAIN}/planets/`,
