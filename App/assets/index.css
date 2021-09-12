@@ -73,12 +73,15 @@ p {
 .logo h2 {
 	font-size: 1.3rem;
 }
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
 .header-container {
 	display: flex;
 	padding: 1.5rem 1em;
-	top: 0;
 	justify-content: space-between;
-	position: sticky;
 	background-color: var(--color-primary);
 	color: var(--color-secundary);
 	align-items: center;
@@ -119,4 +122,24 @@ p {
 }
 .none {
 	display: none;
+}
+
+/* COMPONENTS MAIN */
+.movie {
+	display: grid;
+	margin: 1em;
+	padding: 1em;
+	border: solid 5px var(--color-primary);
+	border-radius: 5px;
+}
+.movie h1 {
+	font-size: 1.8rem;
+}
+.movie > p {
+	text-align: end;
+	margin: 0;
+}
+.movie-descripcion {
+	display: flex;
+	justify-content: space-between;
 }

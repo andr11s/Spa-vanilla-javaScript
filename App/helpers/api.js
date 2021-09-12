@@ -3,7 +3,7 @@ export function Api(params) {
 
 	fetch(url)
 		.then((res) => (res.ok ? res.json() : Promise.reject(res)))
-		.then((json) => cbSucess(json))
+		.then((json) => cbSucess(json.results))
 		.catch((err) => {
 			console.log(err);
 		});
