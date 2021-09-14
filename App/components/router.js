@@ -2,6 +2,7 @@ import { Api } from "../helpers/api.js";
 import ApiConfig from "../helpers/api-config.js";
 import { MoviesCard } from "./movies.js";
 import { People } from "./people.js";
+import { Starships } from "./starships.js";
 
 export async function Router() {
 	const d = document,
@@ -25,6 +26,15 @@ export async function Router() {
 				let htmlPeople = "";
 				movies.forEach((element) => (htmlPeople += People(element)));
 				$MAIN.innerHTML = htmlPeople;
+			},
+		});
+	} else if (hash.includes("#/starships")) {
+		await Api({
+			url: ApiConfig.STARSCHIPS,
+			cbSucess: (movies) => {
+				let htmlstarships = "";
+				movies.forEach((element) => (htmlstarships += Starships(element)));
+				$MAIN.innerHTML = htmlstarships;
 			},
 		});
 	}

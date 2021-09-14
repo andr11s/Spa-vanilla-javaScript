@@ -168,14 +168,27 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: 1em;
+	margin: 0.5em;
 	padding: 1em;
 	border: solid 1px var(--color-primary);
+	border-radius: 5px;
 }
 
 .people a {
 	text-decoration: none;
 	text-align: end;
+}
+
+/* Components starschips */
+.starschips {
+	padding: 1em;
+	margin: 0.5em;
+	border: solid 1px var(--color-primary);
+	border-radius: 5px;
+}
+.starschips > * {
+	text-align: start;
+	margin: 1em;
 }
 
 /* MEDIA QUERIES */
